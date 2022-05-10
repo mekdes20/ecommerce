@@ -17,7 +17,6 @@ use app\http\controller\product\controller;
 Route::get('/',function () {
     return view('welcome');
 });
-route::get('product.register',[productcontroller,'register']);
-{
-route::post('product.register'[productcontroller.'store']);
-}
+//Route::get('product.register',[productcontroller,'register']);
+
+//Route::post('product.register'[productcontroller.'store']);
