@@ -4,26 +4,26 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatProductsTable extends Migration
+class CreateProductsTable extends Migration
 {
-    /**
+    /*
      * Run the migrations.
      *
      * @return void
      */
     public function up()
     {
-        schema::create('products',function(blueprint $table){
+        Schema::create('products', function (Blueprint $table) {
             $table->id();
+            $table->timestamps();
             $table->string('name');
             $table->string('unit')->nullable();
-            $table->double('price',8,2)->nillable();
+            $table->double('price',82)->nullable();
             $table->integer('quantity')->nullable();
-            $table->timestamps();
         });
     }
 
-    /**
+    /*
      * Reverse the migrations.
      *
      * @return void
